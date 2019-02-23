@@ -8,5 +8,5 @@ def index(request):
     #use GET method
     #use 'direction' as the name
     direction = request.GET.get("direction")
-    context = {} #Use Context as the resultant variable
-    return JsonResponse(json.dumps(context),safe=False)
+    print(direction)
+    return JsonResponse(json.dumps(direction),safe=False)
